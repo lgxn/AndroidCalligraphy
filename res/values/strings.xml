@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, MainActivity!</string>
+    <string name="app_name">手书</string>
+    <string name="menu_setting">设置</string>
+    <string name="menu_about">关于</string>
+
+    <string-array name="spinner_shufa_type">
+        <item>描红</item>
+        <item>临摹</item>
+    </string-array>
+        <string name="btn_previous">前一个</string>
+        <string name="btn_next">下一个</string>
+        <string name="btn_refresh">重写</string>
+
+</resources>

@@ -1,0 +1,10 @@
+assets
+gen
+res
+src
+.classpath
+.project
+AndroidManifest.xml
+lint.xml
+proguard.cfg
+project.properties
