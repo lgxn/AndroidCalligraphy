@@ -53,12 +53,12 @@ public class DrawingView extends ImageView
 				textPaint.setTextSize(350);
 				textPaint.setColor(Color.BLACK);
 
-				// FontMetrics对象
+				// FontMetrics瀵硅薄
 				FontMetrics fontMetrics = textPaint.getFontMetrics();
 
 				String text = "abcd";
 
-				// 计算每一个坐标
+				// 璁＄畻姣忎竴涓潗鏍�				
 				float baseX = 10;
 				float baseY = 100;
 				float topY = baseY + fontMetrics.top;
@@ -66,35 +66,35 @@ public class DrawingView extends ImageView
 				float descentY = baseY + fontMetrics.descent;
 				float bottomY = baseY + fontMetrics.bottom;
 
-				// 绘制文本
+				// 缁樺埗鏂囨湰
 				canvas.drawText(text, baseX, baseY, textPaint);
 
-				// BaseLine描画
+				// BaseLine鎻忕敾
 				Paint baseLinePaint = new Paint(Paint.ANTI_ALIAS_FLAG);
 				baseLinePaint.setColor(Color.RED);
 				canvas.drawLine(0, baseY, getWidth(), baseY, baseLinePaint);
 
-				// Base描画
+				// Base鎻忕敾
 				canvas.drawCircle(baseX, baseY, 5, baseLinePaint);
 
-				// TopLine描画
+				// TopLine鎻忕敾
 				Paint topLinePaint = new Paint(Paint.ANTI_ALIAS_FLAG);
 				topLinePaint.setColor(Color.LTGRAY);
 				canvas.drawLine(0, topY, getWidth(), topY, topLinePaint);
 
-				// AscentLine描画
+				// AscentLine鎻忕敾
 				Paint ascentLinePaint = new Paint(Paint.ANTI_ALIAS_FLAG);
 				ascentLinePaint.setColor(Color.GREEN);
 				canvas.drawLine(0, ascentY, getWidth(), ascentY,
 								ascentLinePaint);
 
-				// DescentLine描画
+				// DescentLine鎻忕敾
 				Paint descentLinePaint = new Paint(Paint.ANTI_ALIAS_FLAG);
 				descentLinePaint.setColor(Color.YELLOW);
 				canvas.drawLine(0, descentY, getWidth(), descentY,
 								descentLinePaint);
 
-				// ButtomLine描画
+				// ButtomLine鎻忕敾
 				Paint bottomLinePaint = new Paint(Paint.ANTI_ALIAS_FLAG);
 				bottomLinePaint.setColor(Color.MAGENTA);
 				canvas.drawLine(0, bottomY, getWidth(), bottomY,

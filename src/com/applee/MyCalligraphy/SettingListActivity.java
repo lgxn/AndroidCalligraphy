@@ -78,7 +78,8 @@ public class SettingListActivity extends ListActivity
 		protected void onActivityResult(int requestCode, int resultCode, android.content.Intent data)
 		{
 				//?
-				/
+				//ToDO
+			
 				BackgroundPaints.getInstance().InitPaints(this);
 				
 				DrawingView view = (DrawingView) findViewById(R.id.imgView);
